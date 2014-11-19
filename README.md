@@ -1,7 +1,7 @@
 
 # rocket
 
-*rocket* is a simple stress-testing API for [Node.js](http://nodejs.org/) applications, made using with [socket.io](https://github.com/Automattic/socket.io).
+*rocket* is a simple stress-testing API for [Node.js](http://nodejs.org/) applications, made with [socket.io](https://github.com/Automattic/socket.io).
 
 # Installation
 
