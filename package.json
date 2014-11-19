@@ -1,0 +1,38 @@
+
+{
+    "name": "rocket",
+    "version": "0.1.0",
+    "description": "W3C's simple stress testing API for Node.js applications",
+    "author": "W3C",
+    "contributors": [
+        {"name": "Guillaume Baudusseau", "email": "guillaume@w3.org"},
+        {"name": "Antonio Olmo Titos", "email": "antonio@w3.org"}
+    ],
+    "keywords": [
+        "w3c",
+        "stress",
+        "testing",
+        "socket",
+        "Node.js"
+    ],
+    "license": "[TBA]",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/w3c/rocket"
+    },
+    "bugs": {
+        "url": "https://github.com/w3c/rocket/issues"
+    },
+    "private": true,
+    "dependencies": {
+        "express": "3.5.x",
+        "socket.io": "1.2.x",
+        "socket.io-client": "1.2.x",
+        "yargs": "1.3.x"
+    },
+    "engines": {
+        "node": ">=0.8.0",
+        "npm": "1.2.x"
+    }
+}
+
