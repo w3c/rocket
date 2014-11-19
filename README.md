@@ -13,8 +13,15 @@ npm install -d
 
 ```bash
 nodejs lib/server.js &
-nodejs lib/rocket.js -u http://localhost:3000 -c 1200
+nodejs lib/rocket.js
 ```
+
+The client accept the following optional parameters:
+
+* `-u` **URL of the server**  
+by default, `http://localhost:3000`
+* `-c` **number of clients to launch**  
+by default, `10`
 
 # Special thanks
 
