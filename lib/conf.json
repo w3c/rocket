@@ -1,0 +1,17 @@
+{
+	"url": "http://localhost:3000",
+	"profiles": [
+			{
+				"events": {
+					"start": "check",
+					"steps": [],
+					"stop": "screenshot"
+				},
+				"data": {
+					"profile": "default",
+					"url": "http://w3.org"
+				},
+				"num": 5
+			}
+		]
+}
