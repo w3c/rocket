@@ -9,9 +9,21 @@
 				},
 				"data": {
 					"profile": "default",
-					"url": "http://w3.org"
+					"url": "http://www.w3.org"
 				},
 				"num": 5
+			},
+			{
+				"events": {
+					"start": "check",
+					"steps": [],
+					"stop": "screenshot"
+				},
+				"data": {
+					"profile": "default",
+					"url": "http://jeremie.astori.fr"
+				},
+				"num": 2
 			}
 		]
 }
