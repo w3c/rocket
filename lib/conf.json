@@ -1,29 +1,41 @@
 {
-	"url": "http://localhost:3000",
+	"target": "http://localhost:3000",
 	"profiles": [
 			{
-				"events": {
-					"start": "check",
-					"steps": [],
-					"stop": "screenshot"
+				"start": {
+					"event": "check",
+					"data": {
+						"profile": "default",
+						"url": "http://www.w3.org/"
+					}
 				},
-				"data": {
-					"profile": "default",
-					"url": "http://www.w3.org"
-				},
-				"num": 5
+				"checkpoints": ["done"],
+				"stop": "screenshot",
+				"counter": 5
 			},
 			{
-				"events": {
-					"start": "check",
-					"steps": [],
-					"stop": "screenshot"
+				"start": {
+					"event": "check",
+					"data": {
+						"profile": "default",
+						"url": "http://socket.io/"
+					}
 				},
-				"data": {
-					"profile": "default",
-					"url": "http://jeremie.astori.fr"
+				"checkpoints": ["done"],
+				"stop": "screenshot",
+				"counter": 1
+			},
+			{
+				"start": {
+					"event": "check",
+					"data": {
+						"profile": "default",
+						"url": "http://www.w3.org/Mobile/"
+					}
 				},
-				"num": 2
+				"checkpoints": ["done"],
+				"stop": "screenshot",
+				"counter": 1
 			}
 		]
 }
