@@ -11,17 +11,62 @@ npm install -d
 
 # Usage
 
-```bash
-nodejs lib/server.js &
-nodejs lib/rocket.js
-```
+## use the configuration file
+To use rocket you have to configure the file named 'conf.json' in the lib repository like that:
 
-The client accept the following optional parameters:
+1. create an empty json object.
+	{}
+2. add your target. i.e the url of the application to test with rocket. It could be a local url.
+	{
+		"target": "http://example.com"
+	}
+3. then, add client profiles tab.
+	{
+		"target": "http://example.com",
+		"profiles": []
+	}
+this profile tab contain all kind of clients you need to simulate.
+4. create a client profile.
+	{
+		"start": {
+			"event": "name_start_event", //name of the event which will start the application
+			"data": {} //data to sent with start event
+		},
+		"checkpoints": ["name_checkpoint1", "name_checkpoint2", ...], //checkpoints event received by the server side
+		"stop": "name_stop_event", //received event which will stop the client
+		"counter": 10 //number of clients
+	}
+5. example config file
+	{
+		"target": "http://example.com",
+		"profiles": [
+			//client profile
+			{
+			"start": {
+				"event": "name_start_event", //name of the event which will start the application
+				"data": {} //data to sent with start event
+			},
+			"checkpoints": ["name_checkpoint1", "name_checkpoint2", ...], //checkpoints event received by the server side
+			"stop": "name_stop_event", //received event which will stop the client
+			"counter": 10 //number of clients
+			},
+			//client profile
+			{
+			"start": {
+				"event": "name_start_event", //name of the event which will start the application
+				"data": {} //data to sent with start event
+			},
+			"checkpoints": ["name_checkpoint1", "name_checkpoint2", ...], //checkpoints event received by the server side
+			"stop": "name_stop_event", //received event which will stop the client
+			"counter": 5 //number of clients
+			}
+		]
+	}
+6. run rocket
+	node lib/rocket.js -f
 
-* `-u` **URL of the server**  
-by default, `http://localhost:3000`
-* `-c` **number of clients to launch**  
-by default, `10`
+## use with commamd line arguments
+not available yet.
 
 # Special thanks
 
