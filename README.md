@@ -11,22 +11,37 @@ npm install -d
 
 # Usage
 
-## use the configuration file
+#### use the configuration file
 To use rocket you have to configure the file named 'conf.json' in the lib repository like that:
 
 1. create an empty json object.
+
+	```javascript
 	{}
+	```
+
 2. add your target. i.e the url of the application to test with rocket. It could be a local url.
+
+	```javascript
 	{
 		"target": "http://example.com"
 	}
+	```
+
 3. then, add client profiles tab.
+
+	```javascript
 	{
 		"target": "http://example.com",
 		"profiles": []
 	}
+	```
+
 this profile tab contain all kind of clients you need to simulate.
+
 4. create a client profile.
+
+	```javascript
 	{
 		"start": {
 			"event": "name_start_event", //name of the event which will start the application
@@ -36,7 +51,11 @@ this profile tab contain all kind of clients you need to simulate.
 		"stop": "name_stop_event", //received event which will stop the client
 		"counter": 10 //number of clients
 	}
+	```
+
 5. example config file
+
+	```javascript
 	{
 		"target": "http://example.com",
 		"profiles": [
@@ -62,10 +81,15 @@ this profile tab contain all kind of clients you need to simulate.
 			}
 		]
 	}
-6. run rocket
-	node lib/rocket.js -f
+	```
 
-## use with commamd line arguments
+6. run rocket
+
+	```bash
+	node lib/rocket.js -f
+	```
+
+#### use with commamd line arguments
 not available yet.
 
 # Special thanks
