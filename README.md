@@ -92,6 +92,11 @@ this profile tab contain all kind of clients you need to simulate.
 #### use with commamd line arguments
 not available yet.
 
+# License
+
+Copyright (c) 2014 [Guillaume Baudusseau](https://github.com/guibbs)
+MIT
+
 # Special thanks
 
 I especially would like to thank [deniak](https://github.com/deniak) and [tripu](https://github.com/tripu) for helping me to find a wonderful name for a wonderful tool.
